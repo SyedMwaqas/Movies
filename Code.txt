@@ -1,0 +1,101 @@
+#include<stdio.h>
+#include<iostream>
+#include <cstring>
+
+using namespace std;
+
+
+int main(){
+    
+    
+int i,j=0,cnt=0,t=0,a,b,c,k=0,n1=-1,n2,sav,s,e,d;
+    int x[2000],y[2000];
+//    string sav;
+    int max=0;
+    int index;
+    string z[2000];
+    int sum=0;
+
+    int r=0,n=0;    
+
+    
+//printf("enter values");
+    scanf("%d",&s);
+//printf("enter values");
+    scanf("%d",&e);
+//printf("enter values");
+    scanf("%d",&d);
+
+
+for(i=s;i<=e;i++){
+
+
+//    printf("enter values");a
+        
+        n=i;
+        a=i;
+        
+        
+    //    printf("valuen %f",n);
+
+    while(n!=0){
+        
+         r=n%10;   
+        
+        
+        sum=(sum*10)+r;
+        
+        n=n/10;
+        
+    }
+    
+    
+    if(a<0){
+        
+        a=a*-1;
+        
+    }
+    
+    if(sum<0){
+        
+        sum=sum*-1;
+        
+    }
+    
+    if(a>sum){
+        
+        b=(a-sum);
+        
+        if(b%d==0){
+            
+            x[k]=i;
+            k++;
+            
+        }
+        
+    }else{
+        
+        
+        b=(a-sum);
+        
+        if(b%d==0){
+            
+            x[k]=i;
+            k++;
+
+        }
+
+        
+    }
+    
+    sum=0;
+    r=0;
+    n1=-1;
+    
+    
+}
+    
+
+    cout<<k;
+
+}
